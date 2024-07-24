@@ -10,6 +10,7 @@
 ### IAM
 
 ## helm
+- 對不同環境有不同的image範本邊號
 ### Chart
 ### Template
 - rm rf *

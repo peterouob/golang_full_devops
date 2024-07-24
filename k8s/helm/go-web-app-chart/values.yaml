@@ -7,7 +7,8 @@ image:
 
 ingress:
   enabled: false
-  className: "".
+  className: ""
+  annotations: {}
   hosts:
     - host: chart-example.local
       paths:
