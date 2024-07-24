@@ -22,3 +22,11 @@ edit:
 # get the node port ip
 nodeport-ip:
 	kubectl get nodes -o wide
+helm-create:
+	cd helm
+	helm create go-web-app-chart
+	cd create go-web-app-chart
+	rm -rf charts
+	cd tempalte
+	rm -rf *
+	cp ../../../manifests/* .
