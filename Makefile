@@ -44,3 +44,7 @@ deployment:
 	kubectl get deployment
 helm-uninstall:
 	helm uninstall go-web-app
+ci:
+	git add .
+	git commit -am "feat: implemented CI"
+	git push

@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: peterouob/golang_full_devops
   pullPolicy: IfNotPresent
-  tag: "v1"
+  tag: "10022508432"
 
 ingress:
   enabled: false
