@@ -48,3 +48,9 @@ ci:
 	git add .
 	git commit -am "feat: implemented CI"
 	git push
+get-argocd:
+	kubectl get svc -n argocd
+get-argocd-password:
+	kubectl get secrets -n argocd
+	kubectl edit secret argocd-initial-admin-secret -n argocd
+	echo TzNWaHJEbFdZajlRV0w2WQ== | base64 --decode
